@@ -1,0 +1,151 @@
+:root {
+  --main-color: #009ad8;
+  --secondary-color: #1e202b;
+  --bg-main: #323544;
+}
+
+.text-main {
+  color: var(--main-color);
+}
+
+.bg-main {
+  background-color: var(--secondary-color);
+}
+
+.bg-main-col {
+  background-color: var(--bg-main);
+}
+
+.bg-secondary-color {
+  background-color: #262936;
+}
+
+body {
+  color: #bfc1c8;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  background-color: #1E202B;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0 0 20px;
+  line-height: normal;
+}
+
+/** Navbar  */
+.navbar .navbar-nav li {
+  transition: 0.3s;
+  border: transparent solid 1px;
+}
+
+.navbar .navbar-nav li:hover,
+.navbar .navbar-nav .active-li {
+  color: var(--main-color) !important;
+  border: #009ad8 solid 1px;
+  border-radius: 5px;
+}
+
+.navbar .navbar-nav li:hover a,
+.navbar .navbar-nav .active-li a {
+  color: var(--main-color) !important;
+}
+
+/*? hero  */
+
+.hero {
+  background-image: url('../images/banner.png');
+  min-height: 350px;
+}
+
+.hero .container input {
+  background-color: var(--secondary-color);
+  border: none;
+  color: white;
+}
+
+.hero .container input::placeholder {
+  color: white;
+}
+
+/*! main  */
+.weth {
+  background-color: var(--secondary-color);
+}
+.weth .container{
+  margin-top: -200px;
+}
+
+.weth .top-info {
+  margin-inline: -12px;
+  background-color: #2D303D;
+}
+
+.weth .top-info2 {
+  margin-inline: -12px;
+  background-color: #222530;
+}
+
+
+.weth .data h4 {
+  font-size: 5.4285714286rem;
+}
+
+@media screen and (max-width: 992px) {
+  .weth .data h4 {
+    font-size: 3.4285714286rem;
+  }
+}
+
+.weth .status img {
+  width: 25px;
+}
+
+/** Footer  */
+
+.footer .container input {
+  background-color: var(--secondary-color);
+  border: none;
+  color: white;
+}
+
+.footer .container input::placeholder {
+  color: white;
+}
+
+.footer .icons li{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1E202B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 5px;
+  transition: 0.3s;
+}
+
+.footer .icons li:hover{
+  background-color: var(--main-color);
+}
+
+.footer .icons li:hover i{
+  color: white !important;
+}
+
+@media screen and (max-width: 768px) {
+  .footer .mybtn{
+    position: static !important;
+  }
+  
+}
+
+
+

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="shortcut icon" href="images/logo-FavIcon.png" type="image/x-icon">
+  <!--* Google Fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--* Font Awesome  -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!--* Bootstrap  -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--* Custom Style  -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav>
+    <nav class="navbar navbar-expand-lg py-5 px-4">
+      <div class="container text-white">
+        <a href="#" class="logoNav d-flex justify-content- align-items-center text-decoration-none ">
+          <img src="images/logo@2x.png" class="w-25 me-2 " alt="">
+          <div class="text  ">
+            <h1 class="navbar-brand mb-0 text-white" href="#">Weather</h1>
+            <small class="mb-0 d-block text-decoration-none text-white">tagline goes here</small>
+          </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars text-main"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white align-items-center">
+            <li class="nav-item px-3 m-1 mx-md-2 rounded-pill  active-li">
+              <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item px-3 m-1 mx-md-2  rounded-pill ">
+              <a class="nav-link text-white" href="#">News</a>
+            </li>
+            <li class="nav-item px-3 m-1 mx-md-2  rounded-pill ">
+              <a class="nav-link text-white" href="#">Live cameras</a>
+            </li>
+
+            <li class="nav-item px-3 m-1 mx-md-2  rounded-pill ">
+              <a class="nav-link text-white" href="#">Photos</a>
+            </li>
+            <li class="nav-item px-3 m-1 mx-md-2  rounded-pill ">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </nav>
+
+  <main>
+    <section class="hero py-5 " id="hero">
+      <div class="container">
+        <form action="" class="py-4 ">
+          <div class=" position-relative d-flex ">
+            <input type="text" class=" location-input form-control rounded-pill p-3 ps-4" id="exampleFormControlInput1"
+              placeholder="Find Your Location...">
+            <button type="button"
+              class="btn btn-outline-info rounded-pill p-2 px-5 my-2 mx-2  position-absolute end-0 top-0">Find</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="weth p-5">
+      <div class="container">
+        <div class="row g-4 rounded rounded-4">
+          <div class="col-md-4 main-weather bg-main-col">
+            <div class="inner rounded">
+              <div class="top-info d-flex justify-content-between align-items-center p-2">
+                <span class="day-info"></span>
+                <span  class="month-info"></span>
+              </div>
+              <div class="data p-4 px-3">
+                <h3 class="weather-city h4">Cairo</h3>
+                <h4 class="weather-deg  fw-bold text-white mb-0">36.4<sup>o</sup>C</h4>
+                <img src="images/sunny.png" class="weather-img  w-25 mb-3" alt="Main image for ToDayWeather">
+                <p class="weather-status text-info">Sunny</p>
+                <div class="status d-flex align-items-center justify-content-start">
+                  <span class="rain m-3 d-flex align-items-center justify-content-center span1"><img src="images/icon-umberella@2x.png" alt="Umberella icon" class="me-1 "><span>20%</span></span>
+                  <span class="wind m-3 d-flex align-items-center justify-content-center span2"><img src="images/icon-wind@2x.png" alt="Umberella icon"class="me-1 "><span>18km/h</span></span>
+                  <span class="compass m-3 d-flex align-items-center justify-content-center span3"><img src="images/icon-compass@2x.png" alt="Umberella icon" class="me-1 "><span>East</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 second-weather bg-secondary-color">
+            <div class="inner rounded">
+              <div class="top-info2 d-flex justify-content-center align-items-center p-2">
+                <span class="weather-date">Friday</span>
+              </div>
+              <div class="data p-4 px-3 text-center">
+                <img src=" images/sunny.png" class="weather-img " alt="">
+                <h4 class="weather-deg  fw-bold text-white mt-3 mb-0 fs-3">36.4<sup>o</sup>C</h4>
+                <h5 class="weather-deg2  text-white mb-0 fs-5 my-1 text-opacity-50">36.4<sup>o</sup></h5>
+                <p class="weather-status text-info my-4">Sunny</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 second-weather bg-main-col">
+            <div class="inner rounded">
+              <div class="top-info d-flex justify-content-center align-items-center p-2">
+                <span class="weather-date">Friday</span>
+              </div>
+              <div class="data p-4 px-3 text-center">
+                <img src=" images/sunny.png" class="weather-img " alt="">
+                <h4 class="weather-deg  fw-bold text-white mt-3 mb-0 fs-3">36.4<sup>o</sup>C</h4>
+                <h5 class="weather-deg2  text-white mb-0 fs-5 my-1 text-opacity-50">36.4<sup>o</sup></h5>
+                <p class="weather-status text-info my-4">Sunny</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="footer bg-secondary-color p-4">
+      <div class="container">
+        <div class="box d-flex justify-content-between align-items-center flex-md-row flex-column  ">
+          <form action="" class="py-4 w-75 ">
+            <div class=" position-relative d-flex flex-column flex-md-row ">
+              <input type="email" class="form-control rounded-pill p-3 ps-4" id="exampleFormControlInput1"
+                placeholder="Enter Your email to subscribe...">
+              <button type="button"
+                class="btn btn-outline-info rounded-pill p-2 px-5 my-2 mx-2 mybtn  position-absolute end-0 top-0 ">Find</button>
+            </div>
+          </form>
+          <div class="icons me-5">
+            <ul class="d-flex list-unstyled">
+              <li><a href="https://www.facebook.com/profile.php?id=10000790995378" target="_blank"><i class="fa-brands fa-facebook-f text-info"></i></a></li>
+              <li><a href="" target="_blank"><i class="fa-brands fa-twitter text-info"></i></a></li>
+              <li><a href="https://www.instagram.com/ahmed__mitwally/" target="_blank"><i class="fa-brands fa-instagram text-info"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/ahmed-mitwally-284538286/" target="_blank"><i class="fa-brands fa-linkedin-in text-info"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="text-white mt-3">Copyright ©2024 All rights reserved | This template is made with Ahmed Mitwally</p>
+
+      </div>
+    </section>
+  </main>
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
