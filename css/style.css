@@ -61,7 +61,9 @@ h6 {
 /*? hero  */
 
 .hero {
-  background-image: url('../images/banner.png');
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url('https://www.mehlerlaw.com/images/mehler-homepage.jpg');
+  background-size: cover;
+  background-position: center; 
   min-height: 350px;
 }
 
